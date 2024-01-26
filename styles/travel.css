@@ -49,6 +49,7 @@ nav li a {
 
 /* banner section */
 .banner {
+    margin: 0 auto;
     background-image: url('../Images/Group\ 13\ \(1\)\ \(1\).png');
     background-repeat: no-repeat;
     width: 81%;
@@ -115,6 +116,7 @@ nav li a {
 }
 
 .tours {
+    margin: 0 auto;
     padding: 0px 135px 100px;
     display: flex;
     gap: 100px;
@@ -154,6 +156,7 @@ nav li a {
 }
 
 .destination {
+    margin: 0 auto;
     padding: 0px 135px;
     padding-bottom: 100px;
 
@@ -183,6 +186,7 @@ nav li a {
 }
 
 .box {
+    margin: 0 auto;
     padding: 0px 135px;
     padding-bottom: 100px;
 }
@@ -246,6 +250,7 @@ nav li a {
 }
 
 .place {
+    margin: 0 auto;
     padding: 0px 135px;
     padding-bottom: 50px;
     display: flex;
@@ -278,6 +283,7 @@ nav li a {
 }
 
 .news {
+    margin: 0 auto;
     padding: 0px 135px;
     padding-bottom: 100px;
     display: flex;
@@ -399,23 +405,34 @@ nav li a {
 
 @media screen and (max-width:600px) {
     header,
-    .tours{
+    .tours, .destination, .box, .place, .news{
         padding: 10px;
     }
     
     nav,
-    .tours {
+    .tours,
+    .place,
+    .news {
         flex-direction: column;
     }
-    .content-description
+    .content-description,.title, .place-description
     {
         width: 370px;
     }
-    .tours-content-list{
+    
+    .tours-content-list, .place-list, .icon-description{
        width: 250px;
     }
-    .header-title{
+    .header-title, .title{
         font-size: 20px;
     }
-    
+    .title{
+        padding: 10px;
+    }
+    .box-a{
+        width: 260px;
+    }
+    .form-a input, .btn {
+        width: 240px;
+    }
 }
